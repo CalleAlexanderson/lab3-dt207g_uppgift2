@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="js/display_jobs.js"></script>
+    <script type="module" src="js/template_header.js"></script>
+    <link rel="stylesheet" href="css/header.scss">
+    <link rel="stylesheet" href="css/mains.scss">
+    <title>Tidigare jobbposter</title>
+</head>
+<body>
+     <!-- detta är en template header jag skapat -->
+    <header>
+        <a href="index.html" aria-label="Tillbaks till startsida"><img src="bilder/placeholder logo.svg"
+                alt="logotyp"></a>
+        <h1>Tidigare jobbposter</h1>
+        <nav id="pc_nav">
+            <ul>
+                <li class="currentSite"><a href="index.html">Tidigare jobbposter</a></li>
+                <li><a href="add.html">Lägg till jobbpost</a></li>
+                <li><a href="about.html">Webbplatsens syfte</a></li>
+            </ul>
+        </nav>
+        <button type="button" aria-label="Öpnna navigeringsmeny" id="mobile_btn"><img src="bilder/bars-solid.svg"
+                alt="Navigeringsmeny"></button>
+        <div id="mobile_menu">
+            <nav id="mobile_nav">
+                <button type="button" aria-label="Stäng navigeringsmeny" id="mobile_btn_close"><img
+                        src="bilder/xmark-solid.svg" alt="Navigeringsmeny"></button>
+                <ul>
+                    <li class="currentSite"><a href="index.html"><span>Tidigare jobbposter</span></a></li>
+                    <li><a href="add.html"><span>Lägg till jobbpost</span></a></li>
+                    <li><a href="about.html"><span>Webbplatsens syfte</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div id="works_div">
+
+        </div>
+    </main>
+</body>
+</html>

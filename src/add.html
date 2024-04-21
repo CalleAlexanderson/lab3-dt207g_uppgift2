@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="js/template_header.js"></script>
+    <script type="module" src="js/script.js"></script>
+    <link rel="stylesheet" href="css/header.scss">
+    <link rel="stylesheet" href="css/mains.scss">
+    <title>Lägg till jobbpost</title>
+</head>
+
+<body>
+    <!-- detta är en template header jag skapat -->
+    <header>
+        <a href="index.html" aria-label="Tillbaks till startsida"><img src="bilder/placeholder logo.svg"
+                alt="logotyp"></a>
+        <h1>Lägg till jobbpost</h1>
+        <nav id="pc_nav">
+            <ul>
+                <li><a href="index.html">Tidigare jobbposter</a></li>
+                <li class="currentSite"><a href="add.html">Lägg till jobbpost</a></li>
+                <li><a href="about.html">Webbplatsens syfte</a></li>
+            </ul>
+        </nav>
+        <button type="button" aria-label="Öpnna navigeringsmeny" id="mobile_btn"><img src="bilder/bars-solid.svg"
+                alt="Navigeringsmeny"></button>
+        <div id="mobile_menu">
+            <nav id="mobile_nav">
+                <button type="button" aria-label="Stäng navigeringsmeny" id="mobile_btn_close"><img
+                        src="bilder/xmark-solid.svg" alt="Navigeringsmeny"></button>
+                <ul>
+                    <li><a href="index.html"><span>Tidigare jobbposter</span></a></li>
+                    <li class="currentSite"><a href="add.html"><span>Lägg till jobbpost</span></a></li>
+                    <li><a href="about.html"><span>Webbplatsens syfte</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form id="add_form">
+            <fieldset>
+                <legend>Ny jobbpost</legend>
+                <label for="title">Jobbtitel:</label><br>
+                <input type="text" name="title" id="title"><br><br>
+                <label for="comp">Företag:</label><br>
+                <input type="text" name="comp" id="comp"><br><br>
+                <label for="place">Plats:</label><br>
+                <input type="text" name="place" id="place"><br><br>
+                <label for="descript">Arbetsbeskrivning:</label><br>
+                <textarea name="descript" id="descript" cols="30" rows="10"></textarea><br><br>
+                <button type="submit">Lägg till jobbpost</button>
+            </fieldset>
+        </form>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="js/template_header.js"></script>
+    <link rel="stylesheet" href="css/header.scss">
+    <link rel="stylesheet" href="css/mains.scss">
+    <title>Webbplatsens syfte</title>
+</head>
+
+<body>
+    <!-- detta är en template header jag skapat -->
+    <header>
+        <a href="index.html" aria-label="Tillbaks till startsida"><img src="bilder/placeholder logo.svg"
+                alt="logotyp"></a>
+        <h1>Webbplatsens syfte</h1>
+        <nav id="pc_nav">
+            <ul>
+                <li><a href="index.html">Tidigare jobbposter</a></li>
+                <li><a href="add.html">Lägg till jobbpost</a></li>
+                <li class="currentSite"><a href="about.html">Webbplatsens syfte</a></li>
+            </ul>
+        </nav>
+        <button type="button" aria-label="Öpnna navigeringsmeny" id="mobile_btn"><img src="bilder/bars-solid.svg"
+                alt="Navigeringsmeny"></button>
+        <div id="mobile_menu">
+            <nav id="mobile_nav">
+                <button type="button" aria-label="Stäng navigeringsmeny" id="mobile_btn_close"><img
+                        src="bilder/xmark-solid.svg" alt="Navigeringsmeny"></button>
+                <ul>
+                    <li><a href="index.html"><span>Tidigare jobbposter</span></a></li>
+                    <li><a href="add.html"><span>Lägg till jobbpost</span></a></li>
+                    <li class="currentSite"><a href="about.html"><span>Webbplatsens syfte</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="about_main">
+        <article>
+            <h2>Webbsidans funktion</h2>
+            <p>Webbsidan visar information om de tidigare jobb jag jobbat på. Informationen om jobben är lagrade i en
+                databas som ligger i ett API som sedan anropas med hjälp av javascript. <br> <br>API:et använder sig av
+                CRUD och
+                har funktion för GET, POST och DELETE, när ett fetch anrop görs med GET (och korrekt url) så skickas det
+                tillbaks json data med de olika raderna i databasens tabbel som objekt. <br><br>POST lägger till en ny
+                arbetspost i tabellen och anropas med body parametrar som tas från ett formulär på add.html. <br> <br>
+                DELETE tar bort den rad från tabellen som man klickat på, detta görs genom att ett ID skickas med som en
+                parameter i URL som används vid API anropet.</p>
+        </article>
+        <article>
+            <h2>Mysql</h2>
+            <p>Jag har använt MySql(MariaDB) för att skapa min databas, databasen skapade jag lokalt på min dator genom
+                kommandtolken och tabellen och de rader som läggs in skapas med hjälp av javascript.</p>
+        </article>
+        <article>
+            <h2>Slutsatser</h2>
+            <p>Jag tyckte detta sätt att lagra data på en databas och sedan göra ett API till den var lättare både att
+                skapa och sedan också lättare att jobba med än det sätt vi gjorde i moment 1 då jag redan lärde mig hur man gjorde anrop mot API i
+                tidigare kurs och det var lättare att hålla koll på min kod då det låg uppdelat i olika projekt för både front- och backend. </p>
+        </article>
+    </main>
+</body>
+
+</html>

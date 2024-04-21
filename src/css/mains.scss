@@ -1,0 +1,86 @@
+#works_div {
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
+  article {
+    background-color: darkcyan;
+    border: 1px solid black;
+    margin: 10px 0;
+    > * {
+      margin: 5px;
+      color: white;
+    }
+    .artDesc {
+      line-height: 1.2rem;
+    }
+    button{
+      padding: 2px;
+      color: black;
+      background-color: white;
+      border: 1px solid black;
+    }
+    button:hover{
+      background-color: rgb(225, 225, 225);
+      transition: 0.25s;
+    }
+  }
+}
+
+#add_form {
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
+  fieldset {
+    margin-top: 20px;
+    padding: 10px 0;
+    border-color: darkcyan;
+    legend{
+        margin-left: 20px;
+        font-size: 30px;
+        font-family: Verdana, sans-serif;
+        color:darkcyan;
+    }
+    label {
+      margin: 5px 10px;
+    }
+    input {
+      margin: 5px 20px;
+      padding: 2px;
+    }
+    textarea {
+      margin: 5px 20px;
+      width: calc(100% - 48px);
+      padding: 4px;
+    }
+    button {
+      margin: 5px 10px;
+      padding: 4px;
+      background-color:darkcyan;
+      color: white;
+      border: 1px black solid;
+    }
+    button:hover{
+        background: rgb(0, 100, 100);
+        transition: 0.25s;
+    }
+  }
+}
+
+#about_main{
+    article{
+      border: 2px solid darkcyan;
+      width: 90%;
+      max-width: 500px;
+      margin: 10px auto;
+      border-radius: 20px;
+      h2{
+        color: darkcyan;
+        text-align: center;
+        margin: 10px;
+      }
+      p{
+        line-height: 1.2rem;
+        margin: 5px;
+      }
+    }
+}
