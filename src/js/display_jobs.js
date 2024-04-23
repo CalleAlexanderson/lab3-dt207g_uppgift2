@@ -56,12 +56,12 @@ function displayWorks(works) {
     }
 }
 
-// async function deleteWorks(id) {
-//     const response = await fetch(`http://127.0.0.1:3000/workposts/${id}`, {
-//         method: "DELETE"
-//     });
+async function deleteWorks(id) {
+    const response = await fetch(`http://127.0.0.1:3000/workposts/${id}`, {
+        method: "DELETE"
+    });
 
-//     const res = await response.json();
-//     console.log(res);
-//     getWorks();
-// }
+    const res = await response.json();
+    console.log(res);
+    getWorks();
+}
