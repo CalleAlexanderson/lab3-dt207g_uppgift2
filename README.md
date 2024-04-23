@@ -1,6 +1,6 @@
 # Webbsidan som hämtar data från API
 
-Detta är en webbsidan som används för att hämta data från ett API jag skapat som ligger här: https://github.com/CalleAlexanderson/lab2-dt207g_uppgift1
+Detta är en webbsidan som används för att hämta data från ett API jag skapat som ligger här: https://github.com/CalleAlexanderson/lab3-dt207g_uppgift1
 
 ## Funktioner
 
