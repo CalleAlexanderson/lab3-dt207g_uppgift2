@@ -37,13 +37,13 @@ async function addWork(c, j, l, d) {
 
     if (cname != "" && jt != "" && loc != "" && desc != "") {
         newWorkplace = {
-            companyname: cname,
-            jobtitle: jt,
-            location: loc,
-            description: desc
+            "companyName": cname,
+            "jobTitle": jt,
+            "location": loc,
+            "description": desc
         }
     }
-    const response = await fetch(`http://127.0.0.1:3000/api/workplaces`, {
+    const response = await fetch(`http://127.0.0.1:3000/workposts`, {
         method: "POST",
         headers: {
             "content-type": "Application/json"
